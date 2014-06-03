@@ -21,7 +21,7 @@ setup(
     packages=find_packages(exclude=["sandbox*", "tests*"]),
     include_package_data=True,
     install_requires=[
-        'django=>1.2',
+        'django>=1.2',
     ],
     # See http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=['Environment :: Web Environment',
