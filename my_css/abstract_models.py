@@ -8,12 +8,15 @@ from my_css import settings
 
 
 class AbstractMyCSS(models.Model):
-    css = models.TextField(default="", blank=True)
-    date_created = models.DateTimeField(auto_created=True)
-    date_modified = models.DateTimeField(auto_now_add=True)
+    css = models.TextField(blank=True)
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_modified = models.DateTimeField(auto_now=True)
 
     class Meta:
         abstract = True
+
+    def __unicode__(self):
+        return str(self.id)
 
     def save(self):
         self.archive()
@@ -41,5 +44,11 @@ class AbstractMyCSS(models.Model):
 
 
 class AbstractMyCSSArchive(models.Model):
-    css = models.TextField(default="", blank=True)
-    date_created = models.DateTimeField(auto_created=True)
+    css = models.TextField(blank=True, editable=False)
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        abstract = True
+
+    def __unicode__(self):
+        return str(self.id)
