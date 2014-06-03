@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-my-css',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/mmoravcik/django-my-css',
     author="Matus Moravcik",
     author_email="matus.moravcik@gmail.com",
