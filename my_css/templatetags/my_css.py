@@ -1,6 +1,6 @@
 import uuid
 
-from django.conf import settings
+from my_css import settings
 from django import template
 
 register = template.Library()
@@ -8,7 +8,7 @@ register = template.Library()
 
 @register.simple_tag()
 def my_css(cache=1):
-    css = settings.MY_CSS_URL + settings.MY_CSS_FILENAME
+    css_file = settings.MY_CSS_URL + settings.MY_CSS_FILENAME
     if not cache:
-        css = "%s?u=%s" % (css, str(uuid.uuid4()))
+        css = "%s?u=%s" % (css_file, str(uuid.uuid4())[:8])
     return css

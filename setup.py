@@ -12,8 +12,8 @@ setup(
     url='https://github.com/mmoravcik/django-my-css',
     author="Matus Moravcik",
     author_email="matus.moravcik@gmail.com",
-    description="Simple app that allows user to change "
-                "CSS of Django app in admin",
+    description="Simple app that allows end user to change "
+                "CSS of Django app",
     long_description=open('README.rst').read(),
     keywords="css",
     license='BSD',
