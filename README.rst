@@ -5,8 +5,8 @@ Django-my-CSS
 .. image:: https://api.travis-ci.org/mmoravcik/django-my-css.svg?branch=master
     :target: https://travis-ci.org/mmoravcik/django-my-css
 
-.. image:: https://coveralls.io/repos/mmoravcik/django-my-css/badge.png?branch=add%2Fcoverage 
-    :target: https://coveralls.io/r/mmoravcik/django-my-css?branch=add%2Fcoverage 
+.. image:: https://coveralls.io/repos/mmoravcik/django-my-css/badge.png?branch=master
+    :target: https://coveralls.io/r/mmoravcik/django-my-css?branch=master
 
 Simple django app that allows end-users to change CSS. At the moment only
 through admin interface.
