@@ -18,6 +18,10 @@ class MyCSS(TestCase):
     def test_unicode_representation(self):
         my_css = models.MyCSS.objects.create(css=' ')
         self.assertEqual(unicode(my_css), unicode(my_css.id))
+        my_css.css = '  '
+        my_css.save()
+        my_css_archive = models.MyCSSArchive.objects.get(id=1)
+        self.assertEqual(unicode(my_css_archive), unicode(my_css_archive.id))
 
 
 class MyCSSFileCreation(TestCase):
