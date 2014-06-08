@@ -14,6 +14,6 @@ def run_tests(*test_args):
 if __name__ == '__main__':
     args = sys.argv[1:]
     if not args:
-        args.extend(['--with-coverage', '--cover-package=my_css'])
+        args.extend(['tests'])
     configure()
     run_tests(*args)

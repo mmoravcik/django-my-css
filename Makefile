@@ -2,7 +2,7 @@ install:
 	python setup.py develop
 	pip install -r requirements.txt
 
-test:
-	./runtests.py
+coverage:
+	coverage run ./runtests.py
 
-travis: install test
+travis: install coverage
