@@ -22,7 +22,6 @@ def configure():
                 'my_css',
                 ],
             'PASSWORD_HASHERS': ['django.contrib.auth.hashers.MD5PasswordHasher'],
-
         }
 
         settings.configure(**test_settings)
