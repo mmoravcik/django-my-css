@@ -11,8 +11,8 @@ Instalation
 1. `pip install -e git+git://github.com/mmoravcik/django-my-css.git#egg=django-my-css`
 2. add `my_css` to `INSTALLED_APPS`
 
-USAGE
------
+Template usage
+--------------
 In template, use template tag `{% load my_css %}`
 
 and then
