@@ -46,12 +46,12 @@ Templates Usage
 All of the examples assume that you first load the my_css template tag in
 your template.::
 
-    {% load my_css %}
+    {% load my_css_tags %}
 
 
 Add this to your HEAD section of the template. ::
 
-    <link href="{% mycss 0 %}" rel="stylesheet" type="text/css" />
+    <link href="{% my_css 0 %}" rel="stylesheet" type="text/css" />
 
 
 Where the optional parameter is:

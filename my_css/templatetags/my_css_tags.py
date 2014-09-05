@@ -10,5 +10,5 @@ register = template.Library()
 def my_css(cache=1):
     css_file = settings.MY_CSS_URL + settings.MY_CSS_FILENAME
     if not cache:
-        css = "%s?u=%s" % (css_file, str(uuid.uuid4())[:8])
-    return css
+        css_file = "%s?u=%s" % (css_file, str(uuid.uuid4())[:8])
+    return css_file
